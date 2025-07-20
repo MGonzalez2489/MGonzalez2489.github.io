@@ -1,0 +1,214 @@
+{
+  "icons": [
+    {
+      "title": "Angular",
+      "path": "./../assets/icons/Angular.svg",
+      "tags": ["front-end", "ui", "spa", "javascript framework"]
+    },
+    {
+      "title": "Azure Devops",
+      "path": "./../assets/icons/Azure Devops.svg",
+      "tags": ["devops", "ci/cd", "microsoft", "cloud"]
+    },
+    {
+      "title": "Azure SQL Database",
+      "path": "./../assets/icons/Azure SQL Database.svg",
+      "tags": ["database", "sql", "microsoft", "cloud"]
+    },
+    {
+      "title": "Azure",
+      "path": "./../assets/icons/Azure.svg",
+      "tags": ["cloud", "microsoft", "platform"]
+    },
+    {
+      "title": "BitBucket",
+      "path": "./../assets/icons/BitBucket.svg",
+      "tags": ["version control", "git", "repository", "atlassian"]
+    },
+    {
+      "title": "Bootstrap",
+      "path": "./../assets/icons/Bootstrap.svg",
+      "tags": ["front-end", "css framework", "ui", "responsive design"]
+    },
+    {
+      "title": "C# (CSharp)",
+      "path": "./../assets/icons/C# (CSharp).svg",
+      "tags": ["programming language", "microsoft", "backend"]
+    },
+    {
+      "title": "CSS3",
+      "path": "./../assets/icons/CSS3.svg",
+      "tags": ["front-end", "styling", "web development"]
+    },
+    {
+      "title": "Confluence",
+      "path": "./../assets/icons/Confluence.svg",
+      "tags": ["collaboration", "documentation", "atlassian"]
+    },
+    {
+      "title": "DataGrip",
+      "path": "./../assets/icons/DataGrip.svg",
+      "tags": ["database client", "ide", "jetBrains"]
+    },
+    {
+      "title": "ESLint",
+      "path": "./../assets/icons/ESLint.svg",
+      "tags": ["javascript", "linter", "code quality"]
+    },
+    {
+      "title": "Git",
+      "path": "./../assets/icons/Git.svg",
+      "tags": ["version control", "development tool"]
+    },
+    {
+      "title": "GitHub",
+      "path": "./../assets/icons/GitHub.svg",
+      "tags": ["version control", "repository hosting", "collaboration"]
+    },
+    {
+      "title": "HTML5",
+      "path": "./../assets/icons/HTML5.svg",
+      "tags": ["front-end", "markup language", "web development"]
+    },
+    {
+      "title": "Insomnia",
+      "path": "./../assets/icons/Insomnia.svg",
+      "tags": ["api client", "rest", "graphql"]
+    },
+    {
+      "title": "Jasmine",
+      "path": "./../assets/icons/Jasmine.svg",
+      "tags": ["javascript", "testing", "unit testing"]
+    },
+    {
+      "title": "JavaScript",
+      "path": "./../assets/icons/JavaScript.svg",
+      "tags": [
+        "programming language",
+        "front-end",
+        "back-end",
+        "web development"
+      ]
+    },
+    {
+      "title": "Jest",
+      "path": "./../assets/icons/Jest.svg",
+      "tags": ["javascript", "testing", "unit testing", "react"]
+    },
+    {
+      "title": "Jira",
+      "path": "./../assets/icons/Jira.svg",
+      "tags": ["project management", "issue tracking", "agile", "atlassian"]
+    },
+    {
+      "title": "Linux",
+      "path": "./../assets/icons/Linux.svg",
+      "tags": ["operating system", "os", "server"]
+    },
+    {
+      "title": "MySQL",
+      "path": "./../assets/icons/MySQL.svg",
+      "tags": ["database", "sql", "relational database"]
+    },
+    {
+      "title": "NET core",
+      "path": "./../assets/icons/NET core.svg",
+      "tags": ["framework", "microsoft", "backend"]
+    },
+    {
+      "title": "NET",
+      "path": "./../assets/icons/NET.svg",
+      "tags": ["framework", "microsoft", "backend"]
+    },
+    {
+      "title": "Nest.js",
+      "path": "./../assets/icons/Nest.js.svg",
+      "tags": ["backend", "node.js", "typescript", "framework"]
+    },
+    {
+      "title": "Node.js",
+      "path": "./../assets/icons/Node.js.svg",
+      "tags": ["javascript runtime", "backend", "server-side"]
+    },
+    {
+      "title": "PostgreSQL",
+      "path": "./../assets/icons/PostgreSQL.svg",
+      "tags": ["database", "sql", "relational database"]
+    },
+    {
+      "title": "Postman",
+      "path": "./../assets/icons/Postman.svg",
+      "tags": ["api client", "rest", "testing"]
+    },
+    {
+      "title": "React",
+      "path": "./../assets/icons/React.svg",
+      "tags": ["front-end", "ui", "javascript library", "facebook"]
+    },
+    {
+      "title": "Redux",
+      "path": "./../assets/icons/Redux.svg",
+      "tags": ["state management", "react", "front-end"]
+    },
+    {
+      "title": "SQLite",
+      "path": "./../assets/icons/SQLite.svg",
+      "tags": ["database", "embedded database", "mobile"]
+    },
+    {
+      "title": "Storybook",
+      "path": "./../assets/icons/Storybook.svg",
+      "tags": ["ui development", "component library", "front-end"]
+    },
+    {
+      "title": "Swagger",
+      "path": "./../assets/icons/Swagger.svg",
+      "tags": ["api documentation", "api design", "rest"]
+    },
+    {
+      "title": "Tailwind CSS",
+      "path": "./../assets/icons/Tailwind CSS.svg",
+      "tags": ["css framework", "utility-first", "front-end"]
+    },
+    {
+      "title": "Trello",
+      "path": "./../assets/icons/Trello.svg",
+      "tags": ["project management", "kanban", "task management"]
+    },
+    {
+      "title": "TypeScript",
+      "path": "./../assets/icons/TypeScript.svg",
+      "tags": ["programming language", "javascript superset", "static typing"]
+    },
+    {
+      "title": "Ubuntu",
+      "path": "./../assets/icons/Ubuntu.svg",
+      "tags": ["operating system", "linux", "os"]
+    },
+    {
+      "title": "Vim",
+      "path": "./../assets/icons/Vim.svg",
+      "tags": ["text editor", "ide", "cli"]
+    },
+    {
+      "title": "Visual Studio Code (VS Code)",
+      "path": "./../assets/icons/Visual Studio Code (VS Code).svg",
+      "tags": ["code editor", "ide", "microsoft"]
+    },
+    {
+      "title": "Visual Studio",
+      "path": "./../assets/icons/Visual Studio.svg",
+      "tags": ["ide", "microsoft", "development environment"]
+    },
+    {
+      "title": "Vite.js",
+      "path": "./../assets/icons/Vite.js.svg",
+      "tags": ["build tool", "front-end", "javascript"]
+    },
+    {
+      "title": "jQuery",
+      "path": "./../assets/icons/jQuery.svg",
+      "tags": ["javascript library", "front-end", "dom manipulation"]
+    }
+  ]
+}
