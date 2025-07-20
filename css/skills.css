@@ -1,0 +1,13 @@
+.skills-content-wrap {
+  background-color: gray;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+  padding: 0.5rem;
+}
+.skills-content {
+  background-color: green;
+  padding: 10px;
+  border-radius: 25px;
+}
