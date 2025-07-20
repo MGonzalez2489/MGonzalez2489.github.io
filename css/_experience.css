@@ -1,0 +1,128 @@
+.experience-header {
+  margin-bottom: 48px;
+}
+
+.experience-tables-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -12px; /* Negative margin for grid gap */
+  margin-left: -12px;
+}
+.experience-tables-wrap:first-child {
+  margin-top: -12px;
+}
+.experience-tables-wrap:last-child {
+  margin-bottom: -12px;
+}
+
+.experience-table {
+  position: relative;
+  padding: 12px;
+  width: 368px;
+  max-width: 368px;
+  flex-grow: 1;
+}
+
+.experience-table::before {
+  /* Background illustration */
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 200%;
+  max-width: 200%;
+  height: 435px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  bottom: 18.8%;
+  transform: translateX(-50%);
+  /* background-image: url("../assets/images/experience-illustration.svg"); */
+}
+
+.experience-table-header,
+.experience-table-features-title,
+.experience-table-features li {
+  border-bottom: 1px solid rgba(138, 148, 167, 0.24); /* Consistent border */
+}
+
+.experience-table-inner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: #2c3039;
+  padding: 24px;
+  height: 100%;
+}
+
+.experience-table-inner > * {
+  position: relative;
+  width: 100%; /* Ensure direct children take full width */
+}
+
+.experience-table-inner::before {
+  /* Inner box shadow effect */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 24px 48px rgba(21, 24, 29, 0.24);
+  mix-blend-mode: multiply; /* Blending mode for visual effect */
+}
+
+.experience-table-price-currency {
+  color: #8a94a7;
+}
+
+.experience-table-features-title {
+  color: #fff;
+  font-weight: 700;
+}
+
+.experience-table-features li {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  padding: 14px 0;
+}
+
+.experience-table-features li::before {
+  /* Checkmark icon */
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 16px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUuNiA2LjRMMS42IDQgMCA1LjYgNS42IDEyIDE2IDEuNiAxNC40IDB6IiBmaWxsPSIjMDJDQkIxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+}
+
+.experience-table-cta {
+  align-self: flex-end; /* Push CTA button to the bottom */
+}
+
+@media (min-width: 641px) {
+  .experience .section-paragraph {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .experience-header {
+    margin-bottom: 52px;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+.is-show {
+  display: block;
+  transition:
+    opacity 0.3s ease,
+    display 0.3s ease allow-discrete;
+}
+
+@starting-style {
+  .is-hidden.is-show {
+    opacity: 0;
+  }
+}

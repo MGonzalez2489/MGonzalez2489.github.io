@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8 /" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/_header.css" />
+    <link rel="stylesheet" type="text/css" href="./css/_hero.css" />
+    <link rel="stylesheet" type="text/css" href="./css/_experience.css" />
+
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+  <body class="is-boxed has-animations">
+    <div class="body-wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="brand header-brand">
+              <h1 class="m-0">
+                <a href="#">
+                  <img
+                    class="header-logo-image"
+                    src="./assets/images/logo.svg"
+                    alt="Logo"
+                  />
+                </a>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section class="hero section">
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__content">
+                <h1 class="hero__title">Hero Title</h1>
+                <p class="hero__summary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore...
+                </p>
+                <div class="hero-cta">
+                  <a class="button button-primary" href="#">Get in touch</a
+                  ><a class="button" href="#">About me</a>
+                </div>
+              </div>
+              <div class="hero-figure anime-element">
+                <svg
+                  class="placeholder"
+                  width="528"
+                  height="396"
+                  viewBox="0 0 528 396"
+                >
+                  <rect width="528" height="396" style="fill: transparent" />
+                </svg>
+                <div
+                  class="hero-figure-box hero-figure-box-01"
+                  data-rotation="45deg"
+                ></div>
+                <div
+                  class="hero-figure-box hero-figure-box-02"
+                  data-rotation="-45deg"
+                ></div>
+                <div
+                  class="hero-figure-box hero-figure-box-03"
+                  data-rotation="0deg"
+                ></div>
+                <div
+                  class="hero-figure-box hero-figure-box-04"
+                  data-rotation="-135deg"
+                ></div>
+                <div class="hero-figure-box hero-figure-box-05"></div>
+                <div class="hero-figure-box hero-figure-box-06"></div>
+                <div class="hero-figure-box hero-figure-box-07"></div>
+                <div
+                  class="hero-figure-box hero-figure-box-08"
+                  data-rotation="-22deg"
+                ></div>
+                <div
+                  class="hero-figure-box hero-figure-box-09"
+                  data-rotation="-52deg"
+                ></div>
+                <div
+                  class="hero-figure-box hero-figure-box-10"
+                  data-rotation="-50deg"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="experience section">
+          <div class="container">
+            <div class="experience-inner section-inner">
+              <div class="experience-header text-center">
+                <h2 class="experience-title mt-0">Experience Title</h2>
+                <p class="section-paragraph mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut ad quis nostrud.
+                </p>
+              </div>
+              <div class="experience-tables-wrap">
+                <!-- table -->
+                <template id="experience-card-template">
+                  <div class="experience-table">
+                    <div class="experience-table-inner">
+                      <div class="experience-table-main">
+                        <div class="experience-table-header pb-24">
+                          <div class="experience-table-price">
+                            <p
+                              class="experience-table-price-amount company h2 m-0"
+                            >
+                              Company
+                            </p>
+                            <span class="text-xs dates">dates</span>
+                          </div>
+                        </div>
+                        <div
+                          class="experience-table-features-title text-xs pt-24 pb-24"
+                        >
+                          Title
+                        </div>
+                        <ul
+                          class="experience-table-features list-reset text-xs is-hidden"
+                        ></ul>
+                      </div>
+                      <div class="experience-table-cta mb-8">
+                        <a
+                          class="button button-primary button-shadow button-block"
+                          href="javascript:;"
+                          >See More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </template>
+                <!-- end table -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/hero.js"></script>
+    <script src="./js/experience.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

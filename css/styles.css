@@ -1,0 +1,1452 @@
+/*
+ * ========================================
+ * CSS Reset / Base Styles (Normalize.css inspired)
+ * ========================================
+ */
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* Normalize: Corrects text resizing on iOS and Android */
+}
+
+body {
+  margin: 0; /* Normalize: Removes the margin in all browsers */
+}
+
+.hidden {
+  display: none;
+}
+
+/* Normalize: Corrects the display not defined in IE 8/9/10 */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main,
+details,
+menu {
+  display: block;
+}
+
+h1 {
+  font-size: 2em; /* Normalize: Corrects font size and margin */
+  margin: 0.67em 0;
+}
+
+figure {
+  margin: 1em 40px; /* Normalize: Corrects margin for figure */
+}
+
+hr {
+  box-sizing: content-box; /* Normalize: Corrects box sizing in IE 10- */
+  height: 0; /* Normalize: Corrects overflow in IE 9- */
+  overflow: visible;
+}
+
+pre {
+  font-family:
+    monospace, monospace; /* Normalize: Corrects font family in all browsers */
+  font-size: 1em; /* Normalize: Corrects font size in all browsers */
+}
+
+a {
+  background-color: transparent; /* Normalize: Removes the gray background on active links in IE 10- */
+  -webkit-text-decoration-skip: objects; /* Normalize: Removes gaps in underlines in Chrome, Edge, Safari */
+}
+
+abbr[title] {
+  border-bottom: none; /* Normalize: Removes the border on abbr in IE 10- */
+  text-decoration: underline dotted; /* Consistent dotted underline */
+  -webkit-text-decoration: underline dotted; /* Webkit specific for consistency */
+}
+
+/* Consolidate font-weight for b and strong */
+b,
+strong {
+  font-weight: bolder; /* Normalize: Corrects font weight in all browsers */
+}
+
+code,
+kbd,
+samp,
+pre {
+  /* Combine pre, code, kbd, samp as they share font family and size */
+  font-family: monospace, monospace; /* Fallback for pre */
+  font-size: 1em; /* Fallback for pre */
+}
+
+/* Specific monospace font for code, kbd, tt, var for better rendering */
+code,
+kbd,
+tt,
+var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 16px; /* Specific size */
+  padding: 2px 4px; /* Specific padding */
+}
+
+dfn {
+  font-style: italic; /* Normalize: Corrects font style in Android 4.3- */
+}
+
+mark {
+  background-color: #ff0; /* Normalize: Add the correct background and color in Firefox and Opera */
+  color: #000;
+}
+
+small {
+  font-size: 80%; /* Normalize: Addresses font-size in all browsers */
+}
+
+sub,
+sup {
+  font-size: 75%; /* Normalize: Addresses sub and sup alignment in all browsers */
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block; /* Normalize: Removes the border on images in IE 10- */
+}
+
+audio:not([controls]) {
+  display: none; /* Normalize: Hides audio without controls in Chrome, Opera */
+  height: 0;
+}
+
+img {
+  border-style: none; /* Normalize: Removes the border on images in IE 10- */
+}
+
+svg:not(:root) {
+  overflow: hidden; /* Normalize: Corrects overflow in IE 9- */
+}
+
+/* Forms */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* Normalize: Corrects font family in all browsers */
+  font-size: 100%; /* Normalize: Corrects font size in all browsers */
+  line-height: 1.15; /* Normalize: Corrects line height in all browsers */
+  margin: 0; /* Normalize: Removes margins in Firefox and Safari */
+}
+
+button,
+input {
+  overflow: visible; /* Normalize: Show the overflow in Edge and IE */
+}
+
+button,
+select {
+  text-transform: none; /* Normalize: Corrects text transformation in Firefox and IE */
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* Normalize: Corrects the inability to style clickable types in iOS and Safari */
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none; /* Normalize: Removes inner border and padding in Firefox */
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; /* Normalize: Restores focus style in Firefox */
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em; /* Normalize: Corrects padding in Chrome, Firefox and Opera */
+}
+
+legend {
+  box-sizing: border-box; /* Normalize: Corrects box sizing in IE 10- */
+  color: inherit; /* Normalize: Corrects color in IE 10- */
+  display: table; /* Normalize: Corrects display not defined in IE 10- */
+  max-width: 100%; /* Normalize: Corrects maximum width in IE 10- */
+  padding: 0; /* Normalize: Removes padding in Firefox and Opera */
+  white-space: normal; /* Normalize: Corrects white-space in Chrome, Firefox, Opera, Safari */
+}
+
+progress {
+  display: inline-block; /* Normalize: Corrects the display not defined in IE 10- */
+  vertical-align: baseline; /* Normalize: Corrects the vertical alignment in Chrome, Firefox, Opera, Safari */
+}
+
+textarea {
+  overflow: auto; /* Normalize: Removes default vertical scrollbar in IE 10- */
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* Normalize: Corrects box sizing in IE 10- */
+  padding: 0; /* Normalize: Removes padding in IE 10- */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; /* Normalize: Corrects the cursor style of increment and decrement buttons in Chrome */
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* Normalize: Corrects the odd appearance in Chrome and Safari */
+  outline-offset: -2px; /* Normalize: Corrects outline and text fill in Safari */
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; /* Normalize: Removes the inner border and padding in Chrome and Safari on macOS */
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* Normalize: Corrects the inability to style clickable types in iOS and Safari */
+  font: inherit; /* Normalize: Change font properties to inherit in Safari */
+}
+
+canvas {
+  display: inline-block; /* Normalize: Corrects the display not defined in IE 10- */
+}
+
+template {
+  display: none; /* Normalize: Add the correct display in IE 10- */
+}
+
+[hidden] {
+  display: none; /* Normalize: Add the correct display in IE 10- */
+}
+
+/*
+ * ========================================
+ * Global Styles
+ * ========================================
+ */
+html {
+  box-sizing: border-box; /* Applies to all elements globally */
+  font-size: 20px; /* Base font size for rem units */
+  line-height: 30px; /* Base line height for rhythm */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /* Inherit box-sizing for consistent layout */
+}
+
+body {
+  background: #1d2026; /* Dark background */
+  color: #8a94a7; /* Default text color */
+  font-size: 1rem; /* Relative to html font-size (20px) */
+  font-family: "IBM Plex Sans", sans-serif; /* Primary font family */
+  -moz-osx-font-smoothing: grayscale; /* Font smoothing for macOS Firefox */
+  -webkit-font-smoothing: antialiased; /* Font smoothing for webkit browsers */
+  margin: 0; /* Ensure no default body margin */
+}
+
+/* Body and form elements use the same font family */
+button,
+input,
+select,
+textarea {
+  font-family: inherit; /* Inherit from body for consistency */
+  font-size: 100%; /* Reset to default browser size before custom sizes are applied */
+  line-height: 1.15; /* Reset to default browser line-height */
+}
+
+a {
+  color: #8a94a7; /* Default link color */
+  text-decoration: underline; /* Default link decoration */
+}
+
+a:hover,
+a:active {
+  outline: 0; /* Remove outline on active/hover */
+  text-decoration: none; /* Remove underline on hover/active */
+}
+
+/*
+ * ========================================
+ * Typography
+ * ========================================
+ */
+
+/* Headings Base Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  clear: both; /* Clear floats */
+  color: #fff; /* White color for headings */
+  font-weight: 600; /* Semi-bold */
+}
+
+/* h1 Specific Styles */
+h1,
+.h1 {
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 641px) {
+  h1,
+  .h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+}
+
+/* h2 Specific Styles */
+h2,
+.h2 {
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0px;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 641px) {
+  h2,
+  .h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+/* h3 Specific Styles */
+h3,
+.h3,
+blockquote {
+  /* Blockquote added here as it shares styles with h3 */
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0px;
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 641px) {
+  h3,
+  .h3,
+  blockquote {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+/* h4, h5, h6 Specific Styles */
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.1px;
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 641px) {
+  h4,
+  h5,
+  h6,
+  .h4,
+  .h5,
+  .h6 {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0px;
+  }
+}
+
+/* Mobile-specific heading classes (consider merging with main headings if possible) */
+@media (max-width: 640px) {
+  .h1-mobile {
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0px;
+  }
+  .h2-mobile {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0px;
+  }
+  .h3-mobile {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0px;
+  }
+  .h4-mobile,
+  .h5-mobile,
+  .h6-mobile {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.1px;
+  }
+}
+
+/* Text utility classes */
+.text-light h1,
+.text-light h2,
+.text-light h3,
+.text-light h4,
+.text-light h5,
+.text-light h6,
+.text-light .h1,
+.text-light .h2,
+.text-light .h3,
+.text-light .h4,
+.text-light .h5,
+.text-light .h6 {
+  /* FIX: This rule has an invalid value for 'color'. It should be removed or corrected. */
+  /* color: !important; */
+}
+
+.text-sm {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+}
+
+.text-xs {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+
+/* Paragraphs */
+p {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Text styles */
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: 600; /* Overrides bolder from normalize if needed */
+}
+
+small {
+  font-size: 18px; /* Specific size, overriding 80% from normalize */
+  line-height: 28px;
+  letter-spacing: -0.1px;
+}
+
+/* Blockquotes */
+blockquote {
+  color: #3b404c; /* Specific color */
+  font-style: italic; /* Already defined with h3, but good for explicit override */
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+
+blockquote::before {
+  content: "\201C"; /* Left double quotation mark */
+}
+
+blockquote::after {
+  content: "\201D"; /* Right double quotation mark */
+}
+
+blockquote p {
+  display: inline; /* To keep quotes on the same line as pseudo-elements */
+}
+
+address {
+  color: #8a94a7;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #242830;
+  padding: 24px 0;
+  margin: 0 0 24px;
+}
+
+/* Code and Preformatted Text */
+pre,
+pre h1,
+pre h2,
+pre h3,
+pre h4,
+pre h5,
+pre h6,
+pre .h1,
+pre .h2,
+pre .h3,
+pre .h4,
+pre .h5,
+pre .h6 {
+  font-family:
+    "Courier 10 Pitch", Courier, monospace; /* Specific font for pre */
+}
+
+pre {
+  background: #1d2026; /* Dark background for code blocks */
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px; /* Consolidated margin */
+  max-width: 100%;
+  overflow: auto; /* Enable scrolling for wide code */
+  padding: 24px;
+  margin-bottom: 1.6em; /* Duplicate, removed one */
+}
+
+/*
+ * ========================================
+ * Lists
+ * ========================================
+ */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-left: 24px;
+}
+
+ul {
+  list-style: disc; /* Default disc style */
+}
+
+ol {
+  list-style: decimal; /* Default decimal style */
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0; /* Nested lists have no bottom margin */
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+dt {
+  font-weight: 600; /* Bold definition term */
+}
+
+dd {
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+.list-reset {
+  /* Utility class to remove default list styles */
+  list-style: none;
+  padding: 0;
+}
+
+/*
+ * ========================================
+ * Images & Media
+ * ========================================
+ */
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle; /* Align images nicely in text flow */
+  display: block; /* Make images block-level by default */
+}
+
+svg {
+  display: block; /* Make SVGs block-level by default */
+}
+
+figure {
+  margin: 24px 0; /* Consistent margin for figures */
+}
+
+figcaption {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 0;
+}
+
+/*
+ * ========================================
+ * Tables
+ * ========================================
+ */
+table {
+  border-collapse: collapse; /* Collapse borders for clean look */
+  margin-bottom: 24px;
+  width: 100%; /* Full width tables */
+}
+
+tr {
+  border-bottom: 1px solid #242830; /* Bottom border for table rows */
+}
+
+th {
+  text-align: left; /* Left align table headers */
+}
+
+th,
+td {
+  padding: 10px 16px; /* Consistent padding for table cells */
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0; /* Remove left padding for first column */
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0; /* Remove right padding for last column */
+}
+
+/*
+ * ========================================
+ * Utility Classes (Spacing, Alignment, etc.)
+ * ========================================
+ */
+
+/* Text alignment */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+/* Text color */
+.text-primary {
+  color: #0270d7;
+}
+
+/* Spacing Utilities (Margin & Padding) - Consolidated and grouped */
+/* For consistent increments (e.g., 8px base grid) */
+
+/* Margin all sides */
+.m-0 {
+  margin: 0;
+}
+.m-8 {
+  margin: 8px;
+}
+.m-16 {
+  margin: 16px;
+}
+.m-24 {
+  margin: 24px;
+}
+.m-32 {
+  margin: 32px;
+}
+.m-40 {
+  margin: 40px;
+}
+.m-48 {
+  margin: 48px;
+}
+.m-56 {
+  margin: 56px;
+}
+.m-64 {
+  margin: 64px;
+}
+
+/* Margin Top */
+.mt-0 {
+  margin-top: 0;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-48 {
+  margin-top: 48px;
+}
+.mt-56 {
+  margin-top: 56px;
+}
+.mt-64 {
+  margin-top: 64px;
+}
+
+/* Margin Bottom */
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.mb-56 {
+  margin-bottom: 56px;
+}
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+/* Margin Left */
+.ml-0 {
+  margin-left: 0;
+}
+.ml-8 {
+  margin-left: 8px;
+}
+.ml-16 {
+  margin-left: 16px;
+}
+.ml-24 {
+  margin-left: 24px;
+}
+.ml-32 {
+  margin-left: 32px;
+}
+.ml-40 {
+  margin-left: 40px;
+}
+.ml-48 {
+  margin-left: 48px;
+}
+.ml-56 {
+  margin-left: 56px;
+}
+.ml-64 {
+  margin-left: 64px;
+}
+
+/* Margin Right */
+.mr-0 {
+  margin-right: 0;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+.mr-16 {
+  margin-right: 16px;
+}
+.mr-24 {
+  margin-right: 24px;
+}
+.mr-32 {
+  margin-right: 32px;
+}
+.mr-40 {
+  margin-right: 40px;
+}
+.mr-48 {
+  margin-right: 48px;
+}
+.mr-56 {
+  margin-right: 56px;
+}
+.mr-64 {
+  margin-right: 64px;
+}
+
+/* Padding all sides */
+.p-0 {
+  padding: 0;
+}
+.p-8 {
+  padding: 8px;
+}
+.p-16 {
+  padding: 16px;
+}
+.p-24 {
+  padding: 24px;
+}
+.p-32 {
+  padding: 32px;
+}
+.p-40 {
+  padding: 40px;
+}
+.p-48 {
+  padding: 48px;
+}
+.p-56 {
+  padding: 56px;
+}
+.p-64 {
+  padding: 64px;
+}
+
+/* Padding Top */
+.pt-0 {
+  padding-top: 0;
+}
+.pt-8 {
+  padding-top: 8px;
+}
+.pt-16 {
+  padding-top: 16px;
+}
+.pt-24 {
+  padding-top: 24px;
+}
+.pt-32 {
+  padding-top: 32px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-48 {
+  padding-top: 48px;
+}
+.pt-56 {
+  padding-top: 56px;
+}
+.pt-64 {
+  padding-top: 64px;
+}
+
+/* Padding Bottom */
+.pb-0 {
+  padding-bottom: 0;
+}
+.pb-8 {
+  padding-bottom: 8px;
+}
+.pb-16 {
+  padding-bottom: 16px;
+}
+.pb-24 {
+  padding-bottom: 24px;
+}
+.pb-32 {
+  padding-bottom: 32px;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+.pb-48 {
+  padding-bottom: 48px;
+}
+.pb-56 {
+  padding-bottom: 56px;
+}
+.pb-64 {
+  padding-bottom: 64px;
+}
+
+/* Padding Left */
+.pl-0 {
+  padding-left: 0;
+}
+.pl-8 {
+  padding-left: 8px;
+}
+.pl-16 {
+  padding-left: 16px;
+}
+.pl-24 {
+  padding-left: 24px;
+}
+.pl-32 {
+  padding-left: 32px;
+}
+.pl-40 {
+  padding-left: 40px;
+}
+.pl-48 {
+  padding-left: 48px;
+}
+.pl-56 {
+  padding-left: 56px;
+}
+.pl-64 {
+  padding-left: 64px;
+}
+
+/* Padding Right */
+.pr-0 {
+  padding-right: 0;
+}
+.pr-8 {
+  padding-right: 8px;
+}
+.pr-16 {
+  padding-right: 16px;
+}
+.pr-24 {
+  padding-right: 24px;
+}
+.pr-32 {
+  padding-right: 32px;
+}
+.pr-40 {
+  padding-right: 40px;
+}
+.pr-48 {
+  padding-right: 48px;
+}
+.pr-56 {
+  padding-right: 56px;
+}
+.pr-64 {
+  padding-right: 64px;
+}
+
+/*
+ * ========================================
+ * Layout & Structure
+ * ========================================
+ */
+
+/* Container classes */
+.container,
+.container-sm {
+  width: 100%;
+  margin: 0 auto; /* Center align */
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 481px) {
+  .container,
+  .container-sm {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.container {
+  max-width: 1128px;
+}
+
+.container-sm {
+  max-width: 848px;
+}
+
+.container .container-sm {
+  /* Nested container behavior */
+  max-width: 800px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Screen reader text (accessibility) */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  border-radius: 2px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #1d2026;
+  color: #0270d7 !important;
+  border: none;
+  height: auto;
+  left: 8px;
+  padding: 16px 32px;
+  top: 8px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* Dividers */
+.has-top-divider,
+.has-bottom-divider {
+  position: relative;
+}
+
+.has-top-divider::before,
+.has-bottom-divider::after {
+  /* Combine common properties */
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: block;
+  height: 1px;
+  background: #242830;
+}
+
+.has-top-divider::before {
+  top: 0;
+}
+
+.has-bottom-divider::after {
+  bottom: 0;
+}
+
+/* Boxed Layout */
+.is-boxed {
+  background: #242830;
+}
+
+.body-wrap {
+  background: #1d2026;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.boxed-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: 0 24px 48px rgba(21, 24, 29, 0.24);
+  /* mix-blend-mode: multiply; (Duplicate, remove one if not needed) */
+  mix-blend-mode: normal; /* This seems to override the multiply above */
+}
+
+main {
+  flex: 1 0 auto; /* Main content takes available space */
+}
+
+.section-inner {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 641px) {
+  .section-inner {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+}
+
+/*
+ * ========================================
+ * Components
+ * ========================================
+ */
+
+/* Input & Textarea */
+.input,
+.textarea {
+  background-color: #fff; /* White background */
+  border: 1px solid #242830; /* Solid border */
+  border-radius: 2px;
+  color: #8a94a7; /* Text color */
+  max-width: 100%;
+  width: 100%;
+}
+
+.input::-moz-placeholder,
+.textarea::-moz-placeholder {
+  /* For Firefox */
+  color: #3b404c;
+}
+.input::placeholder,
+.textarea::placeholder {
+  /* Standard */
+  color: #3b404c;
+}
+.input::-ms-input-placeholder,
+.textarea::-ms-input-placeholder {
+  /* For IE */
+  color: #3b404c;
+}
+.input:-ms-input-placeholder,
+.textarea:-ms-input-placeholder {
+  /* For IE 10-11 */
+  color: #3b404c;
+}
+
+.input:hover,
+.textarea:hover {
+  border-color: #191c21;
+}
+
+.input:active,
+.input:focus,
+.textarea:active,
+.textarea:focus {
+  outline: none; /* Remove default outline */
+  border-color: #242830;
+}
+
+.input[disabled],
+.textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #1d2026;
+  border-color: #1d2026;
+}
+
+.input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-size: 16px;
+  letter-spacing: -0.1px;
+  line-height: 20px;
+  padding: 13px 16px;
+  height: 48px;
+  box-shadow: none;
+}
+
+.input.inline-input, /* Renamed for clarity */
+.textarea.inline-textarea {
+  /* Renamed for clarity */
+  display: inline;
+  width: auto;
+}
+
+.textarea {
+  display: block;
+  min-width: 100%;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Field Grouping */
+.field-grouped > .control:not(:last-child) {
+  margin-bottom: 8px; /* Default margin for stacked controls */
+}
+
+@media (min-width: 641px) {
+  .field-grouped {
+    display: flex; /* Flex container on larger screens */
+  }
+  .field-grouped > .control {
+    flex-shrink: 0; /* Prevents controls from shrinking */
+  }
+  .field-grouped > .control.control-expanded {
+    flex-grow: 1; /* Allows specific controls to expand */
+    flex-shrink: 1;
+  }
+  .field-grouped > .control:not(:last-child) {
+    margin-bottom: 0; /* Remove bottom margin when flex */
+    margin-right: 8px; /* Add right margin when flex */
+  }
+}
+
+/* Buttons */
+.button {
+  display: inline-flex; /* Use flex for centering content */
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  line-height: 16px;
+  text-decoration: none !important; /* Force no underline */
+  text-transform: uppercase;
+  background-color: #242830; /* Default background */
+  color: #fff !important; /* Force white text */
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically (added for flex) */
+  padding: 16px 32px;
+  height: 48px;
+  text-align: center; /* Redundant with justify-content, but kept for legacy/fallback */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.button:hover {
+  background: #262a33; /* Slightly darker on hover */
+}
+
+.button:active {
+  outline: 0; /* Remove outline on active */
+}
+
+/* No specific :before styles needed unless for a specific effect not defined here */
+/* .button::before {
+    border-radius: 2px;
+} */
+
+.button-sm {
+  /* Small button variant */
+  padding: 8px 24px;
+  height: 32px;
+}
+
+.button-primary {
+  /* Primary button variant */
+  background: linear-gradient(65deg, #0270d7 0%, #0f8afd 100%);
+}
+
+.button-primary:hover {
+  background: linear-gradient(65deg, #0275e1 0%, #198ffd 100%);
+}
+
+.button-block {
+  /* Full-width button */
+  display: flex; /* Already defined above, consolidated */
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .button-wide-mobile {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/*
+ * ========================================
+ * Features Section Styles
+ * ========================================
+ */
+.features-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: -32px; /* Negative margin for grid gap */
+  margin-left: -32px;
+}
+
+.features-wrap:first-of-type {
+  margin-top: -16px; /* Adjust top margin for first wrap */
+}
+.features-wrap:last-of-type {
+  margin-bottom: -16px; /* Adjust bottom margin for last wrap */
+}
+
+.feature {
+  padding: 16px 32px;
+  width: 380px;
+  max-width: 380px;
+  flex-grow: 1; /* Allows features to grow */
+}
+
+.feature-inner {
+  height: 100%; /* Ensures inner content fills feature space */
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center; /* Center icons */
+}
+
+@media (min-width: 641px) {
+  .features-wrap:first-of-type {
+    margin-top: -24px;
+  }
+  .features-wrap:last-of-type {
+    margin-bottom: -24px;
+  }
+  .feature {
+    padding: 32px 32px;
+  }
+}
+
+/*
+ * ========================================
+ * CTA (Call To Action) Section Styles
+ * ========================================
+ */
+.cta {
+  text-align: center;
+}
+
+.cta .section-inner {
+  padding: 48px 16px;
+}
+
+.cta .section-title {
+  margin-bottom: 40px;
+}
+
+.cta-inner {
+  position: relative;
+  background: #15181d;
+  overflow: hidden;
+}
+
+.cta-inner::before {
+  /* Illustration */
+  content: "";
+  position: absolute;
+  right: 98px;
+  top: -117px;
+  width: 160px;
+  height: 187px;
+  background-image: url("../images/cta-illustration.svg");
+  background-repeat: no-repeat;
+}
+
+.cta-inner > * {
+  position: relative; /* Ensure content is above pseudo-element */
+}
+
+@media (min-width: 641px) {
+  .cta {
+    text-align: left;
+  }
+  .cta .section-inner {
+    padding: 64px 32px;
+  }
+  .cta .section-title {
+    margin-bottom: 0;
+    padding-right: 24px;
+  }
+  .cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/*
+ * ========================================
+ * Footer Styles
+ * ========================================
+ */
+.site-footer {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+
+.site-footer a {
+  color: #8a94a7;
+  text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:active {
+  text-decoration: underline;
+}
+
+.site-footer-inner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.footer-brand,
+.footer-links,
+.footer-social-links,
+.footer-copyright {
+  flex: none; /* Prevent flex growing */
+  width: 100%; /* Full width on mobile */
+  display: inline-flex; /* Use inline-flex for content */
+  justify-content: center; /* Center content horizontally */
+}
+
+.footer-brand,
+.footer-links,
+.footer-social-links {
+  margin-bottom: 24px;
+}
+
+.footer-social-links li {
+  display: inline-flex;
+}
+.footer-social-links li + li {
+  margin-left: 16px;
+}
+.footer-social-links li a {
+  padding: 8px;
+}
+
+.footer-links li + li {
+  margin-left: 24px;
+}
+
+@media (min-width: 641px) {
+  .site-footer {
+    margin-top: 20px; /* Adjust top margin for desktop */
+  }
+  .site-footer-inner {
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .footer-brand,
+  .footer-links,
+  .footer-social-links,
+  .footer-copyright {
+    flex: 50%; /* Distribute width on desktop */
+  }
+  .footer-brand,
+  .footer-copyright {
+    justify-content: flex-start; /* Align to start on desktop */
+  }
+  .footer-links,
+  .footer-social-links {
+    justify-content: flex-end; /* Align to end on desktop */
+  }
+  .footer-links {
+    order: 1; /* Change order if needed */
+    margin-bottom: 0;
+  }
+}
