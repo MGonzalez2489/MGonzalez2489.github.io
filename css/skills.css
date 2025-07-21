@@ -28,9 +28,6 @@
   cursor: pointer;
 }
 
-.skills-menu {
-}
-
 .skills-item {
   list-style-type: none;
   padding: 6px 0.7rem;
@@ -40,7 +37,6 @@
 .skills-item-active {
   background: linear-gradient(65deg, #0270d7 0%, #0f8afd 100%);
   color: #fff;
-  /* background-color: linear-gradient(65deg, #0275e1 0%, #198ffd 100%); */
 }
 
 .skills-item:hover {
