@@ -1086,8 +1086,8 @@ main {
 
 @media (min-width: 641px) {
   .section-inner {
-    padding-top: 88px;
-    padding-bottom: 88px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -1449,4 +1449,31 @@ main {
     order: 1; /* Change order if needed */
     margin-bottom: 0;
   }
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

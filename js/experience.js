@@ -48,6 +48,7 @@ function renderJobCards(experienceData) {
 
   // Use a DocumentFragment for better performance when appending multiple elements
   const fragment = document.createDocumentFragment();
+  experienceData.jobs = experienceData.jobs.sort((a, b) => b.id - a.id);
 
   experienceData.jobs.forEach((job) => {
     const cardContent = template.content.cloneNode(true);

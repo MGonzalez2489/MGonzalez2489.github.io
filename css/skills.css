@@ -1,13 +1,49 @@
 .skills-content-wrap {
-  background-color: gray;
-  flex-wrap: wrap;
+  display: flex;
+  gap: 2rem;
+  /* height: 100%; */
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+.skills-results {
   display: flex;
   gap: 1rem;
-  height: 100%;
-  padding: 0.5rem;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
+
 .skills-content {
-  background-color: green;
+  background-color: white;
   padding: 10px;
   border-radius: 25px;
+  max-height: 3.5rem;
+  max-width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-content:hover {
+  cursor: pointer;
+}
+
+.skills-menu {
+}
+
+.skills-item {
+  list-style-type: none;
+  padding: 6px 0.7rem;
+  margin-top: 3px;
+  border-radius: 5px;
+}
+.skills-item-active {
+  background: linear-gradient(65deg, #0270d7 0%, #0f8afd 100%);
+  color: #fff;
+  /* background-color: linear-gradient(65deg, #0275e1 0%, #198ffd 100%); */
+}
+
+.skills-item:hover {
+  cursor: pointer;
+  background-color: #2c3039;
 }
